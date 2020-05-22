@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "prebuild": "rm -rf dist",
+    "build": "npm run prebuild && parcel build index.html --public-url '.'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

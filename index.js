@@ -2,4 +2,4 @@ import {
   DurianButton,
   DurianCard,
   DurianImage,
-} from "durian/dist/index.min.js";
+} from "./node_modules/durian/dist/index.min.js";
